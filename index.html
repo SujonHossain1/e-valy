@@ -20,7 +20,7 @@
     <header>
 
         <!-- Top Header -->
-        <div class="nav-top d-none">
+        <div class="nav-top d-none d-md-block">
             <div class="container  nav">
                 <li class="nav-item mr-3">
                     <svg class="mr-1" width="18" height="18" viewBox="0 0 18 18" fill="none"
@@ -56,7 +56,7 @@
             </div>
         </div>
         <!-- Main Header -->
-        <div class="sticky d-none " id="main-header">
+        <div class="sticky d-none d-md-block " id="main-header">
             <!-- Navbar 1 -->
             <nav class="navbar navbar-expand-md navbar-light py-3 ">
                 <div class="container">
@@ -121,7 +121,7 @@
                     <ul class="navbar-nav navbar-nav-1">
 
                         <div class="dropdown">
-                            <button class="btn-style mr-4" id="toggler-btn">
+                            <button class="btn-style" id="toggler-btn">
                                 <svg class="bi" width="30" height="28" fill="currentColor">
                                     <use xlink:href="images/icons/bootstrap-icons.svg#list" />
                                 </svg>
@@ -211,7 +211,7 @@
                             </li>
                         </div>
                         <li class="nav-item ml-5 mr-2 pl-5">
-                            <a class="nav-link" href="#">Gift card </a>
+                            <a class="nav-link" href="#">Giftcard </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Catagories</a>
@@ -240,11 +240,54 @@
             </nav>
             <!-- ==== End 2nd Navbar ==== -->
 
+        </div> <!-- End Main Header -->
+
+
+        <!-- ==== Mobile and Tab Navigation ==== -->
+        <nav class="moblie-nav-section fixed d-md-none d-lg-none">
+            <div class="">
+                <div class="mobile-nav">
+                    <button class="mobile-nav-button">
+                        <svg class="bi" width="25" height="25" fill="currentColor">
+                            <use xlink:href="images/icons/bootstrap-icons.svg#list" />
+                        </svg>
+                    </button>
+                    <div>
+                        <a href="" class="text-center">
+                            <img class="mobile-nav-icon" src="images/icons/e-valiy.png" alt="">
+                        </a>
+                    </div>
+                    <div class="mobile-nav-login">
+                        <a class="mobile-nav-login-link" href="#">
+                            <svg class="bi" width="16" height="16" fill="currentColor">
+                                <use xlink:href="images/icons/bootstrap-icons.svg#person" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <form class="d-flex mt-3 mx-2">
+                            <input class="navbar-search w-100" type="search" placeholder="Search for ...">
+                            <button class="navbar-search-btn" type="submit">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
             <!-- ==== Side Menu Start ==== -->
             <div class="side-menu-overlay">
                 <div class="side-menu">
                     <!-- Top Section-->
-                    <div class="side-menu-top ">
+                    <div class="side-menu-top  ">
                         <img class="navbar-brand-icon " src="images/icons/e-valiy.png" alt="">
                         <span id="times-icon" class="times-icon d-inline-block"> &times;</span>
                     </div>
@@ -391,52 +434,10 @@
                         <a href="">. Terms & Conditions</a>
                         <a href=""> · Returns and Replacement</a>
                     </div>
-                    <p class="pl-4">© e-valy.com 2019</p>
+                    <p class="pl-4">© e-valy.com 2020</p>
                 </div> <!-- End Side Menu Section -->
             </div> <!-- End Side Menu overlay -->
             <!-- ==== End Side Menu Section==== -->
-        </div> <!-- End Main Header -->
-
-
-        <!-- ==== Mobile and Tab Navigation ==== -->
-        <nav class="moblie-nav-section fixed d-md-none d-lg-none">
-            <div class="container">
-                <div class="mobile-nav">
-                    <button class="mobile-nav-button">
-                        <svg class="bi" width="30" height="28" fill="currentColor">
-                            <use xlink:href="images/icons/bootstrap-icons.svg#list" />
-                        </svg>
-                    </button>
-                    <div>
-                        <a href="" class="navbar-brand text-center">
-                            <img class="navbar-brand-icon" src="images/icons/e-valiy.png" alt="">
-                        </a>
-                    </div>
-                    <div class="mobile-nav-login">
-                        <a class="mobile-nav-login-link" href="#">
-                            <svg class="bi" width="16" height="16" fill="currentColor">
-                                <use xlink:href="images/icons/bootstrap-icons.svg#person" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <form class="d-flex mt-3 mx-4">
-                            <input class="navbar-search w-100" type="search" placeholder="Search for ...">
-                            <button class="navbar-search-btn" type="submit">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
-                                    </path>
-                                </svg>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </nav>
     </header>
     <!-- ==== Header Section End ==== -->
     <main>

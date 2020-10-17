@@ -19,8 +19,14 @@ window.addEventListener('scroll', fixNav);
 const toggle = document.getElementById('toggler-btn');
 const sideMenuOverlay = document.querySelector(".side-menu-overlay");
 const crossBtn = document.getElementById("times-icon");
+const toggleMobile = document.querySelector(".mobile-nav-button");
+
 
 toggle.addEventListener('click', () => {
+    sideMenuOverlay.style.display = "block";
+})
+
+toggleMobile.addEventListener('click', () => {
     sideMenuOverlay.style.display = "block";
 })
 

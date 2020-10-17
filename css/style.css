@@ -56,17 +56,18 @@ a:hover {
     color: #000000;
 }
 
-/* input,
-textarea,
-select {
-    font-size: 14px;
-    padding: 8px 15px;
-    width: 100%;
-    margin: 0 0 15px 0;
-    max-width: 100%;
-    resize: none;
-} */
+@media (max-width: 575.98px) {  }
 
+@media (min-width: 576px) and (max-width: 767.98px) {  }
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) { }
+
+
+@media (min-width: 1200px) {  }
 
 /***** Navigation  style  *********/
 .sticky {
@@ -86,9 +87,8 @@ select {
     left: 0;
     right: 0;
     top: 0;
-    z-index: 3;
+    z-index: 1;
     background: #fff;
-    /* box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.2), 4px 0px 5px 1px rgba(0, 0, 0, 0.19); */
 }
 
 .container,
@@ -165,7 +165,19 @@ select {
 .navbar-1 {
     background-color: var(--white);
 }
+.navbar-1 .nav-link {
+    border: 1px dotted #f1f1f1;
+    margin: 0px 6px;
+    border-radius: 50%;
+    padding: 4px 7px;
+    box-shadow: 0px 0px 2px #efe0e0;
+}
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar-1 .nav-link {
+        margin: 0px 6px;
+    }
+}
 
 /************** Navbar 2 ********************/
 .navbar.navbar-2 {
@@ -253,6 +265,10 @@ select {
     border-bottom: none;
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+}
+
 /********************* Side Menu ************************ */
 .side-menu-overlay {
     background-color: rgba(85, 85, 85, 0.452);
@@ -283,6 +299,13 @@ select {
     padding: 25px 20px;
     box-shadow: 0px 0px 0 rgba(0, 0, 0, 0.2), 0 -1px 5px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 20px;
+    width: inherit;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    background: #fff;
 }
 
 .times-icon {
@@ -294,6 +317,7 @@ select {
     border: 1px solid var(--border-color);
     margin: 10px;
     border-radius: 5px;
+    margin-top: 150px;
 }
 
 .side-menu-login .side-menu-img {
@@ -359,7 +383,7 @@ select {
 /* ************ mobile menu **************** */
 .moblie-nav-section{
    background: #fff;
-   padding: 20px 25px;
+   padding: 18px 25px;
 }
 .mobile-nav{
     width: 100%;
@@ -373,14 +397,26 @@ select {
 }
 .mobile-nav-login-link{
     border: 1px solid var(--border-color);
-    padding: 6px 7px;
+    padding: 6px 8px;
     border-radius: 50%;
     padding-top: 2px;
+    display: inline-block;
+    margin-top: 6px;
 }
-.mobile-nav-login-link svg{
-    /* border: 1px solid var(--border-color); */
-    /* padding: 1px; */
+button.mobile-nav-button:focus {
+    border: none;
+    outline: none;
 }
+.mobile-nav-icon{
+    width: 75px;
+}
+@media (max-width: 575.98px) {  
+    .moblie-nav-section .navbar-search-btn{
+        padding: 5px 12px;
+    }
+    
+}
+
 /****************** carousel *******************/
 .carousel {
     border-radius: 15px;
