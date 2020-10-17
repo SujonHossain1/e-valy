@@ -41,7 +41,7 @@ body {
 
 .btn-danger {
     background: var(--primary) !important;
-   
+
 }
 
 .btn-style {
@@ -54,10 +54,12 @@ body {
     text-transform: uppercase;
     font-size: 14px;
 }
-.btn-style:focus{
+
+.btn-style:focus {
     border: none;
     outline: none;
 }
+
 a {
     color: #000000;
 }
@@ -121,7 +123,7 @@ a:hover {
     width: 100px;
 }
 
-.search-box{
+.search-box {
     background-color: white;
     letter-spacing: 0.025em;
     font-weight: 500;
@@ -145,10 +147,12 @@ a:hover {
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
 }
-.search-box-btn:focus{
+
+.search-box-btn:focus {
     outline: none;
     border: none;
 }
+
 .search-box:focus {
     background: #F7F8FA;
 }
@@ -168,6 +172,7 @@ a:hover {
 .navbar-1 {
     background-color: var(--white);
 }
+
 .navbar-1 .nav-link {
     border: 1px dotted #f1f1f1;
     margin: 0px 6px;
@@ -181,16 +186,18 @@ a:hover {
         margin: 0px 6px;
     }
 }
-@media (min-width: 992px) and (max-width: 1199.98px) { 
-    .navbar-1 .navbar-nav{
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .navbar-1 .navbar-nav {
         margin-left: 65px;
     }
 }
-@media (min-width: 1200px) { 
-    .navbar-1 .navbar-nav{
+
+@media (min-width: 1200px) {
+    .navbar-1 .navbar-nav {
         margin-left: 100px;
     }
- }
+}
 
 /************** Navbar 2 ********************/
 .navbar.navbar-2 {
@@ -259,11 +266,7 @@ a:hover {
     text-transform: initial;
 }
 
-.dropdown-item:active {
-    color: #16181b;
-    text-decoration: none;
-    background-color: #f8f9fa;
-}
+
 
 .dropdown-item {
     font-size: 15px;
@@ -274,13 +277,21 @@ a:hover {
     padding-bottom: 10px;
 }
 
+.dropdown-item:active {
+    color: #16181b;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.dropdown-item:hover {
+    background: transparent;
+}
+
 .dropdown-item:last-child {
     border-bottom: none;
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
-    
-}
+@media (min-width: 768px) and (max-width: 991.98px) {}
 
 /********************* Side Navigation Menu ************************ */
 .side-menu-overlay {
@@ -393,22 +404,31 @@ a:hover {
     color: #222;
 }
 
-/* ************ mobile menu **************** */
-.moblie-nav-section{
-   background: #fff;
-   padding: 18px 25px;
+@media (max-width: 575.98px) {
+    .side-menu {
+        width: 300px;
+    }
 }
-.mobile-nav{
+
+/* ************ mobile menu **************** */
+.moblie-nav-section {
+    background: #fff;
+    padding: 18px 25px;
+}
+
+.mobile-nav {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: space-between;
 }
-.mobile-nav-button{
+
+.mobile-nav-button {
     background-color: transparent;
     border: none;
 }
-.mobile-nav-login-link{
+
+.mobile-nav-login-link {
     border: 1px solid var(--border-color);
     padding: 6px 8px;
     border-radius: 50%;
@@ -416,41 +436,40 @@ a:hover {
     display: inline-block;
     margin-top: 6px;
 }
+
 button.mobile-nav-button:focus {
     border: none;
     outline: none;
 }
-.mobile-nav-icon{
+
+.mobile-nav-icon {
     width: 75px;
 }
-@media (max-width: 575.98px) {  
-    .moblie-nav-section .search-box-btn{
+
+@media (max-width: 575.98px) {
+    .moblie-nav-section .search-box-btn {
         padding: 5px 12px;
     }
-    
+
 }
+
 /* **************** Main Menu ******************************** */
 
-@media (max-width: 575.98px) {  
-    main{
+@media (max-width: 575.98px) {
+    main {
         margin-top: 150px;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-    main{
+    main {
         margin-top: 150px;
     }
-  }
+}
 
 
 
 
-
-@media (min-width: 992px) and (max-width: 1199.98px) { }
-
-
-@media (min-width: 1200px) {  }
 /****************** carousel *******************/
 .carousel {
     border-radius: 15px;
@@ -471,6 +490,32 @@ button.mobile-nav-button:focus {
     width: 35px;
 }
 
+@media (max-width: 575.98px) {
+    .carousel-indicators li {
+        height: 5px;
+        width: 5px;
+
+    }
+
+    .carousel-indicators .active {
+        background-color: var(--primary);
+        width: 15px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .carousel-indicators li {
+        height: 7px;
+        width: 7px;
+
+    }
+
+    .carousel-indicators .active {
+        background-color: var(--primary);
+        width: 20px;
+    }
+}
+
 /************** Sell Section ***************/
 .sell-item {
     display: flex;
@@ -482,63 +527,96 @@ button.mobile-nav-button:focus {
     background-color: var(--white);
 }
 
-.sell-item h5{
+.sell-item h5 {
     font-size: 16px;
     font-weight: 700;
 }
-.line-through{
+
+.line-through {
     text-decoration: line-through;
     padding: 0px 7px;
     color: gray;
 }
-.sell-item p{
-color: gray;
+
+.sell-item p {
+    color: gray;
 }
 
 .sell-item-img {
     max-width: 180px;
     max-height: 170px;
 }
-.shop-section .container .row 
-[class*="col-"] {
-  padding-right: 8px;
-  padding-left: 8px;
+
+.shop-section .container .row [class*="col-"] {
+    padding-right: 8px;
+    padding-left: 8px;
 }
+
+@media (max-width: 575.98px) {
+    .sell-item-img {
+        max-width: 131px;
+        max-height: 129px;
+        margin-top: 55px;
+    }
+}
+
 /* ********** shop-by-brand-header *************** */
 
-.brand-header{
+.brand-header {
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-   text-align: center;
-   margin: 40px 0px;
-}
-.shop-by-brand-item{
-    background-color: var(--white);
-    padding: 18px 10px;
-    border-radius: 5px;
     text-align: center;
-    box-shadow: 0 0 5px 0 rgba(0,0,0,.05);
-}
-.shop-by-brand .container .row 
-[class*="col-"] {
-  padding-right: 8px;
-  padding-left: 8px;
+    margin: 40px 0px;
 }
 
-/* ************** Bags and luaggs ******************* */
-.bag-luggage-item{
+.brand-header-sec-btn {
+    margin-left: 20px;
+}
+
+.shop-by-brand-item {
     background-color: var(--white);
     padding: 18px 10px;
     border-radius: 5px;
     text-align: center;
-    box-shadow: 0 0 5px 0 rgba(0,0,0,.05);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .05);
 }
-.bag-luggage-item img{
+
+.shop-by-brand .container .row [class*="col-"] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+
+@media (max-width: 575.98px) {
+    .brand-header .search-box-btn {
+        padding: 0px 7px;
+        font-size: 19px;
+
+    }
+
+    .brand-header-sec-btn {
+        margin-left: 5px;
+        font-size: 13px;
+    }
+}
+
+
+/* ************** Bags and luaggs ******************* */
+.bag-luggage-item {
+    background-color: var(--white);
+    padding: 18px 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .05);
+}
+
+.bag-luggage-item img {
     transition: all 0.40s linear;
 }
-.bag-luggage-item img:hover{
+
+.bag-luggage-item img:hover {
     transform: scale(1.05)
 }
 
@@ -546,23 +624,26 @@ color: gray;
 .footer {
     background: rgb(51, 62, 79);
     color: rgb(156, 169, 190);
-    padding-top:70px;
+    padding-top: 70px;
     padding-bottom: 50px;
-}
-.footer ul{
-    list-style: none;
-}
-.footer ul li {
-    padding: 5px 0px;
+    padding-left: 30px;
 }
 
-.footer img{
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li {
+    padding: 3px 0px;
+}
+
+.footer img {
     width: 120px;
     display: block;
     margin: 15px 0px;
 }
 
-.footer a{
+.footer a {
     padding: 8px 12px;
     background-color: var(--primary-dark);
     margin: 0px 3px;
