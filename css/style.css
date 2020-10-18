@@ -278,10 +278,11 @@ a:hover {
 }
 
 /* *********** Sub Category **************** */
-.insert-sub-category{
+.insert-sub-category {
     position: relative;
 }
-.sub-category{
+
+.sub-category {
     position: absolute;
     background: #fff;
     left: 99%;
@@ -293,13 +294,16 @@ a:hover {
     box-shadow: 0px 0px 0 rgba(0, 0, 0, 0.2), 0 -1px 5px 0 rgba(0, 0, 0, 0.19);
     border-radius: 0px;
 }
-.insert-sub-category:hover .sub-category{
+
+.insert-sub-category:hover .sub-category {
     display: block;
 }
-.sub-category-item{
+
+.sub-category-item {
     display: block;
     border-bottom: 1px solid var(--border-color);
 }
+
 /********************* Side Navigation Menu ************************ */
 .side-menu-overlay {
     background-color: rgba(85, 85, 85, 0.452);
@@ -413,7 +417,7 @@ a:hover {
 
 @media (max-width: 575.98px) {
     .side-menu {
-        width: 300px;
+        width: 100%;
     }
 }
 
@@ -460,6 +464,45 @@ button.mobile-nav-button:focus {
 
 }
 
+/* *************** Mobile Bottom menu ************************/
+.fixed-nav-bottom {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+}
+.mobile-bottom-menu{
+    background-color: var(--white);
+}
+.bottom-menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu-text{
+    font-weight: 600;
+    font-size: 15px;
+    color: #444;
+    display: block;
+}
+
+.botttom-menu-img{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 11px;
+    margin-top: -40px;
+    margin-left: -14px;
+}
+.bottom-menu-item img{
+
+width: 35px;
+}
 /* **************** Main Menu ******************************** */
 
 @media (max-width: 575.98px) {
@@ -618,7 +661,7 @@ button.mobile-nav-button:focus {
     color: rgb(50, 62, 70);
     line-height: 20px;
     font-weight: 600;
-    
+
 }
 
 @media (max-width: 575.98px) {
@@ -643,27 +686,31 @@ button.mobile-nav-button:focus {
 
 
 /* ************** Bags and luaggs ******************* */
-.product-cart{
+.product-cart {
     height: 100%;
     background-color: #fff;
     overflow: hidden;
     border-radius: 10px;
 }
-.product-cart-img{
+
+.product-cart-img {
     position: relative;
     background-color: rgb(237, 242, 247);
     height: 100%;
     padding-bottom: 92%;
     opacity: 1;
-    
+
 }
-.product-cart-img img{
+
+.product-cart-img img {
     transition: all 0.3s linear 0s;
 }
-.product-cart-img img:hover{
+
+.product-cart-img img:hover {
     transform: scale(1.1);
 }
-.product-cart-text{
+
+.product-cart-text {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     display: -webkit-box;
@@ -676,6 +723,7 @@ button.mobile-nav-button:focus {
     font-weight: bold;
     font-size: 16px;
 }
+
 .span-text {
     width: 100%;
     font-size: 16px;
@@ -684,6 +732,7 @@ button.mobile-nav-button:focus {
     text-align: center;
     display: block;
 }
+
 /* **************Footer ************ */
 .footer {
     background: rgb(51, 62, 79);
@@ -696,19 +745,19 @@ button.mobile-nav-button:focus {
 }
 
 .footer-download img {
-        width: 120px;
-        display: block;
-        margin: 15px 0px;
-    }
+    width: 120px;
+    display: block;
+    margin: 15px 0px;
+}
 
-.footer-menu a{
+.footer-menu a {
     display: block;
     color: rgb(156, 169, 190);
 }
 
-.footer-contact span{
+.footer-contact span {
     display: block;
-} 
+}
 
 .footer-get-in-touch a {
     padding: 8px 12px;
@@ -717,3 +766,11 @@ button.mobile-nav-button:focus {
     border-radius: 5px;
     padding-bottom: 9px;
 }
+
+@media (max-width: 575.98px) {
+    .footer{
+        padding-bottom: 100px;
+    }
+    
+
+    }
