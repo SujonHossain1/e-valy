@@ -473,7 +473,36 @@ button.mobile-nav-button:focus {
     bottom: 0;
     z-index: 20;
 }
+.mobile-bottom-menu{
+    background-color: var(--white);
+}
+.bottom-menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu-text{
+    font-weight: 600;
+    font-size: 15px;
+    color: #444;
+    display: block;
+}
 
+.botttom-menu-img{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 11px;
+    margin-top: -40px;
+    margin-left: -14px;
+}
+.bottom-menu-item img{
+
+width: 35px;
+}
 /* **************** Main Menu ******************************** */
 
 @media (max-width: 575.98px) {
@@ -737,3 +766,11 @@ button.mobile-nav-button:focus {
     border-radius: 5px;
     padding-bottom: 9px;
 }
+
+@media (max-width: 575.98px) {
+    .footer{
+        padding-bottom: 100px;
+    }
+    
+
+    }
